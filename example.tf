@@ -11,3 +11,12 @@ resource "aws_instance" "example" {
     Name = "Hi"
   }
 }
+
+resource "aws_instance" "example2" {
+  ami = "ami-2757f631"
+  instance_type = "t2.micro"
+  subnet_id = "subnet-c389bdb4"
+  tags = {
+    Name = "hiyo"
+  }
+}
